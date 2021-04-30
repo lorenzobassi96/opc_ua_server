@@ -62,7 +62,7 @@ int main(int argc, char * argv[]) {
      	}
 
 
-      int timestamp = time(0) + 5;
+      int timestamp = time(0) + 1;
 
       while(running == true){
 		// Handle Server
@@ -70,7 +70,7 @@ int main(int argc, char * argv[]) {
 
 		//Update the variable Node
 		if(time(0) > timestamp){
-			timestamp = time(0) + 5;
+			timestamp = time(0) + 1;
 			UA_Variant value;
 			random_var = rand();
 			UA_LOG_INFO(UA_Log_Stdout, UA_LOGCATEGORY_USERLAND, "New random number: %d", random_var);
