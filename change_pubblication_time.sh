@@ -1,5 +1,3 @@
-KILL=$(netstat -lpn |grep :5555)
-comando="lsof -t -i:"
 kill -9 $(lsof -t -i:$2)
 
 cd /home/ubuntu
