@@ -30,7 +30,7 @@ echo "--------------------------------------"
 echo "BUILD OF THE SERVER..."
 echo "--------------------------------------"
 
-gcc -std=c99 open62541.c myServer.c -o myServer
+sudo gcc -std=c99 open62541.c myServer.c -o myServer
 #sudo gcc myServer.c -o myServer -lopen62541
 
 echo "--------------------------------------"
