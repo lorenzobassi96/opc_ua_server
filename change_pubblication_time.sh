@@ -24,4 +24,4 @@ cp -R * /home/ubuntu/
 chmod +x myServer
 
 IP=$(/sbin/ifconfig ens3 | grep 'inet' | cut -d: -f2 | awk $'{print $2}')
-./myServer (echo $IP) 5555
+./myServer $IP 5555
