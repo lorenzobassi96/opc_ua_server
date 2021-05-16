@@ -3,6 +3,7 @@ comando="lsof -t -i:"
 kill -9 $(lsof -t -i:$2)
 
 cd /home/ubuntu
+rm -rf C-Projects
 mkdir /home/ubuntu/C-Projects
 mkdir /home/ubuntu/C-Projects/OPC_UA
 cd temp_opcua_installation_process/
