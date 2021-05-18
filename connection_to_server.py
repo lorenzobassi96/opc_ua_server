@@ -12,4 +12,4 @@ client.connect()
 from time import sleep
 while True:
  print(client.get_node("ns=1;s=Random_Number").get_value())
- sleep(2)
+ sleep(1)
